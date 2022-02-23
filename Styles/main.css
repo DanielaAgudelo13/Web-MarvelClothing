@@ -1,0 +1,56 @@
+/*Importe la fuente para la pág web*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: #1e232f;
+}
+
+.header__nav {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+
+.header__nav a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__btns input {
+    /*Crear el buscador*/
+    background-color: #1e232f;
+    outline: none;
+    border: none;
+    padding: 16px 8px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+}
+
+.header__btns {
+    gap: 28px;
+}
+
+.banner img {
+    width: 100%;
+}
