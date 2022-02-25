@@ -3,6 +3,7 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -13,6 +14,7 @@
 
 .header__nav {
     font-size: 20px;
+    padding: 0px 48px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,4 +55,19 @@
 
 .banner img {
     width: 100%;
+}
+
+h1 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    /* identical to box height */
+
+    color: #1e232f;
+}
+
+h1 b {
+    font-weight: bolder;
 }
