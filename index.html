@@ -6,11 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./Styles/main.css" />
         <title>Document</title>
-
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      />
         <style>
             .product {
-                width: 1300px;
+                width: 1400px;
                 display: flex;
+            }
+
+            .newCollections {
+                width: 400px;
             }
 
             .product__image,
@@ -21,7 +28,20 @@
                 object-fit: cover;
             }
 
+            .newCollections__image, 
+            .newCollections__image--main,
+            .newCollections__image--hover{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+        
+
             .product__image--hover {
+                display: none;
+            }
+
+            .newCollections__image--hover {
                 display: none;
             }
 
@@ -29,9 +49,18 @@
                 display: none;
             }
 
+            .newCollections__image:hover .newCollections__image--main{
+                display: none;
+            }
+
             .product__image:hover .product__image--hover {
                 display: block;
             }
+
+            .newCollections__image:hover .newCollections__image--hover{
+                display:block;
+            }
+            
         </style>
     </head>
     <body>
@@ -62,22 +91,12 @@
             </article>
         </header>
 
-        <article class="newCollections"></article>
-
-        <article class="characters"></article>
-
         <article class="clothing">
             <div class="clothing__info">
                 <h1>Ya está aquí</h1>
                 <h1><b>Lo nuevo</b></h1>
                 <p>Ver todo</p>
             </div>
-            <div class="clothing__gallery"></div>
-        </article>
-
-        <article class="subscriptionForm"></article>
-
-        <footer class="footer"></footer>
 
         <div class="product">
             <div class="product__image">
@@ -131,7 +150,60 @@
                 <p>Camiseta de hombre, manga
                     corta negra de Hulk </p>
                 <p class="product__price">$70.900</p>
-
         </div>
+
+        
+
+        </article>
+
+        <article class="characters">
+            <div class="clothing__gallery"></div>
+            <div class="clothing__gallery">
+                </p><h2>TUS PERSONAJES FAVORITOS
+                    EN UN SOLO LUGAR</h2>
+                <h2><b>Elige tu personaje y descubre nuevas prendas disponibles</b></h2>
+            </div>
+            <img src="./data/images/ESONOES.png" alt="" />
+            
+        </article>
+
+        <article class="newCollections">
+            <div class="newCollections__info">
+                <h1>Aterrizó nueva</h1>
+                <h1><b>COLECCIÓN</b></h1>
+                <p>Ver todo</p>
+            </div>
+
+                <div class="newCollections__image">
+            <img
+                    src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$"
+                    alt=""
+                    class="newCollections__image--main"
+                />
+
+            <img
+                src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$"
+                alt=""
+                class="newCollections__image--hover"
+            />
+        </div>
+
+        </article>
+
+        <article class="subscriptionForm">
+
+        </article>
+
+        <footer class="footer">
+
+        </footer>
+
     </body>
+
+    <!--Librería para interacciones y arriba hay otro-->
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(...)
+      </script>
 </html>
