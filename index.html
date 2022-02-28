@@ -1,125 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./Styles/main.css" />
-        <title>Document</title>
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <style>
-            body {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-            .product {
-                width: 100%;
-                max-width: 1400px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                gap: 25px;       /*Separacion entre las imagenes*/
-            }
+        .product {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+            /*Separacion entre las imagenes*/
+        }
 
-            .newCollections {
-                width: 400px;
-            }
+        .newCollections {
+            width: 400px;
+        }
 
-            .product__image,
-            .product__image--main,
-            .product__image--hover {
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-            }
+        .product__image,
+        .product__image--main,
+        .product__image--hover {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
 
-            .newCollections__image, 
-            .newCollections__image--main,
-            .newCollections__image--hover{
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-            }
-        
+        .newCollections__image,
+        .newCollections__image--main,
+        .newCollections__image--hover {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
 
-            .product__image--hover {
-                display: none;
-            }
 
-            .newCollections__image--hover {
-                display: none;
-            }
+        .product__image--hover {
+            display: none;
+        }
 
-            .product__image:hover .product__image--main {
-                display: none;
-            }
+        .newCollections__image--hover {
+            display: none;
+        }
 
-            .newCollections__image:hover .newCollections__image--main{
-                display: none;
-            }
+        .product__image:hover .product__image--main {
+            display: none;
+        }
 
-            .product__image:hover .product__image--hover {
-                display: block;
-            }
+        .newCollections__image:hover .newCollections__image--main {
+            display: none;
+        }
 
-            .newCollections__image:hover .newCollections__image--hover{
-                display:block;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <!--Todo el contenido de la página web-->
-        <header class="header">
-            <nav class="header__nav">
-                <div>
-                    <img src="./data/images/Group 26.png" alt="logo.svg" />
-                    <ul>
-                        <a href="#">Hombre</a>
-                        <a href="#">Mujer</a>
-                        <a href="#">Nuevo</a>
-                        <a href="#">Promoción</a>
-                    </ul>
-                </div>
+        .product__image:hover .product__image--hover {
+            display: block;
+        }
 
-                <div class="header__btns">
-                    <input type="text" placeholder="Encuentra tu preferido" />
-                    <img src="./data/images/Login.svg" alt="" />
-                    <img src="./data/images/LIKE.svg" alt="" />
-                    <img src="./data/images/BUY.svg" alt="" />
-                </div>
-            </nav>
+        .newCollections__image:hover .newCollections__image--hover {
+            display: block;
+        }
+    </style>
+</head>
+<header class="header">
+    <nav class="header__nav">
+        <div>
+            <img src="./data/images/Group 26.png" alt="logo.svg" />
+            <ul>
+                <a href="#">Hombre</a>
+                <a href="#">Mujer</a>
+                <a href="#">Nuevo</a>
+                <a href="#">Promoción</a>
+            </ul>
+        </div>
 
-            <article class="banner">
-                <img src="./data/images/BannerStranger.jpg" alt="" />
-                <img src="./data/images/Stepsbuy.png" alt="" />
-            </article>
-        </header>
+        <div class="header__btns">
+            <input type="text" placeholder="Encuentra tu preferido" />
+            <img src="./data/images/Login.svg" alt="" />
+            <img src="./data/images/LIKE.svg" alt="" />
+            <img src="./data/images/BUY.svg" alt="" />
+        </div>
+    </nav>
 
-        <article class="product">
-            <article class="clothing">
-                <div class="clothing__info">
-                    <h1>Ya está aquí</h1>
-                    <h1><b>Lo nuevo</b></h1>
-                    <p>Ver todo</p>
-                </div>
-            </article>
+    <article class="banner">
+        <img src="./data/images/BannerStranger.jpg" alt="" />
+        <img src="./data/images/Stepsbuy.png" alt="" />
+    </article>
+</header>
+
+<body>
+    <!--Todo el contenido de la página web-->
+
+
+    <article class="clothing">
+
+        <section class="clothing__info">
+            <h1>Ya está aquí</h1>
+            <h1><b>Lo nuevo</b></h1>
+            <p>Ver todo</p>
+        </section>
+
+
+        <section class="product">
             <div class="product__item">
                 <div class="product__image">
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/170017-1600-1600?v=637721598348970000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--main"
-                    />
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/170019-1600-1600?v=637721598596900000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--hover"
-                    />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170017-1600-1600?v=637721598348970000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170019-1600-1600?v=637721598596900000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" />
                 </div>
+
                 <div class="product__info">
                     <h2>SPIDER MAN</h2>
                     <p>Camiseta de hombre, manga corta roja de Spiderman</p>
@@ -129,16 +128,10 @@
 
             <div class="product__item">
                 <div class="product__image">
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/164821-1600-1600?v=637399245410730000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--main"
-                    />
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/164824-1600-1600?v=637399245417770000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--hover"
-                    />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/164821-1600-1600?v=637399245410730000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/164824-1600-1600?v=637399245417770000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" />
                 </div>
                 <div class="product__info">
                     <h2>THANOS</h2>
@@ -146,104 +139,123 @@
                     <p class="product__price">$50.500</p>
                 </div>
             </div>
-            
+
             <div class="product__info">
                 <div class="product__image">
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/166914-1600-1600?v=637403598315870000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--main"
-                    />
-                    <img
-                        src="https://moviesshopco.vtexassets.com/arquivos/ids/166916-1600-1600?v=637403598329300000&width=1600&height=1600&aspect=true"
-                        alt=""
-                        class="product__image--hover"
-                    />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/166914-1600-1600?v=637403598315870000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/166916-1600-1600?v=637403598329300000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" />
                 </div>
+
                 <div class="product__info">
                     <h2>HULK</h2>
                     <p>Camiseta de hombre, manga
                         corta negra de Hulk </p>
                     <p class="product__price">$70.900</p>
-            </div>        
-
-        </article>
-
-        <article class="characters">
-            <div class="clothing__gallery"></div>
-            <div class="clothing__gallery">
-                </p><h2>TUS PERSONAJES FAVORITOS
-                    EN UN SOLO LUGAR</h2>
-                <h2><b>Elige tu personaje y descubre nuevas prendas disponibles</b></h2>
-            </div>
-            <img src="./data/images/ESONOES.png" alt="" />
-            
-        </article>
-
-        <article class="newCollections">
-            <div class="newCollections__info">
-                <h1>Aterrizó nueva</h1>
-                <h1><b>COLECCIÓN</b></h1>
-                <p>Ver todo</p>
+                </div>
             </div>
 
-                <div class="newCollections__image">
-            <img
-                    src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$"
-                    alt=""
-                    class="newCollections__image--main"
-                />
+        </section>
 
-            <img
-                src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$"
-                alt=""
-                class="newCollections__image--hover"
-            />
+    </article>
+
+    <article class="characters">
+        <div class="clothing__gallery">
+            </p>
+            <h2>TUS PERSONAJES FAVORITOS
+                EN UN SOLO LUGAR</h2>
+            <h2><b>Elige tu personaje y descubre nuevas prendas disponibles</b></h2>
+        </div>
+        <img src="./data/images/ESONOES.png" alt="" />
+
+    </article>
+
+    <article class="newCollections">
+        <div class="newCollections__info">
+            <h1>Aterrizó nueva</h1>
+            <h1><b>COLECCIÓN</b></h1>
+            <p>Ver todo</p>
+        </div>
+
+        <div class="newCollections__image">
+            <img src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$" alt=""
+                class="newCollections__image--main" />
+
+            <img src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$" alt=""
+                class="newCollections__image--hover" />
+
+        </div>
 
         <div class="newCollection__info">
             <h2>HAWKEYE</h2>
             <p>Camiseta de hombre, manga
                 corta negra de Hulk </p>
             <p class="product__price">$70.900</p>
-    </div>
+        </div>
 
-    <div class="newCollections__image">
-        <img
-                src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$"
-                alt=""
-                class="newCollections__image--main"
-            />
+        <div class="newCollections__image">
+            <img src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$" alt=""
+                class="newCollections__image--main" />
 
-        <img
-            src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$"
-            alt=""
-            class="newCollections__image--hover"
-        />
-        
-    <div class="newCollection__info">
-        <h2>HAWKEYE</h2>
-        <p>Camiseta de hombre, manga
-            corta negra de Hulk </p>
-        <p class="newCollection__price">$70.900</p>
+            <img src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$" alt=""
+                class="newCollections__image--hover" />
+        </div>
+
+        <div class="newCollection__info">
+            <h2>HAWKEYE</h2>
+            <p>Camiseta de hombre, manga
+                corta negra de Hulk </p>
+            <p class="newCollection__price">$70.900</p>
 
         </div>
 
-        </article>
+    </article>
 
-        <article class="subscriptionForm">
+    <article class="subscriptionForm">
+        <p>Suscríbete y obtén el 20% de descuento</p>
+        <input class="subscriptionForm__input" placeholder="Ingresa tu correo electrónico" type="text">
+        <button class="subscriptionForm__btn">Enviar</button>
 
-        </article>
+    </article>
 
-        <footer class="footer">
 
-        </footer>
 
-    </body>
+</body>
 
-    <!--Librería para interacciones y arriba hay otro-->
+<footer class="footer">
+    <div class="footer__info">
+        <div class="footer__info__column">
+            <h1>title</h1>
+            <hr>
+            <p>contenido</p>
+        </div>
+        <div class="footer__info__column">
+            <h1>title</h1>
+            <hr>
+            <p>contenido</p>
+        </div>
+        <div class="footer__info__column">
+            <h1>title</h1>
+            <hr>
+            <p>contenido</p>
+        </div>
+
+    </div>
+
+    <div class="footer__copyright">
+        <p>Copyright. Allrights reserved.</p>
+    </div>
+
+</footer>
+
+<!--Librería para interacciones y arriba hay otro
+    
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
       
         const swiper = new Swiper(...)
       </script>
+      -->
+
 </html>

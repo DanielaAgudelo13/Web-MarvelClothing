@@ -87,7 +87,7 @@ h2 b {
 */
 
 .characters {
-    margin-top: 20px; /*Espacios entre arriba y abajo*/
+    margin-top: 90px; /*Espacios entre arriba y abajo*/
     width: 100%;
 }
 
@@ -96,11 +96,21 @@ h2 b {
 }
 
 .clothing {
-    padding: 40px 20px;
+    width: 100%;
+    padding: 60px 0;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.clothing__info {
+    width: 40%;
+    padding-right: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .newCollections {
@@ -115,4 +125,62 @@ h2 b {
 .product__item {
     display: flex;
     flex-direction: column;
+}
+
+.subscriptionForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+
+    background-color: #ff1c22;
+    color: #fff !important;
+    font-size: 30px;
+}
+
+.subscriptionForm__input,
+.subscriptionForm__btn {
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer hr {
+    border: 1px solid #ff1c22;
+}
+
+.footer__info {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 60px;
+    background-color: #1e232f;
+
+    display: flex;
+    justify-content: space-around;
+
+    color: #fff !important;
+}
+
+.footer__info p,
+.footer__info h1 {
+    color: #fff !important;
+}
+
+.footer__copyright {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.footer__copyright p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: black;
+    text-align: center;
 }
