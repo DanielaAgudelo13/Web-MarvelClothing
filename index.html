@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./Styles/main.css" />
         <title>Document</title>
-        <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-      />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <style>
-            .product {
-                width: 1400px;
+            body {
+                width: 100%;
                 display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 100%;
+                max-width: 1400px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 25px;       /*Separacion entre las imagenes*/
             }
 
             .newCollections {
@@ -91,68 +99,73 @@
             </article>
         </header>
 
-        <article class="clothing">
-            <div class="clothing__info">
-                <h1>Ya está aquí</h1>
-                <h1><b>Lo nuevo</b></h1>
-                <p>Ver todo</p>
+        <article class="product">
+            <article class="clothing">
+                <div class="clothing__info">
+                    <h1>Ya está aquí</h1>
+                    <h1><b>Lo nuevo</b></h1>
+                    <p>Ver todo</p>
+                </div>
+            </article>
+            <div class="product__item">
+                <div class="product__image">
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/170017-1600-1600?v=637721598348970000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--main"
+                    />
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/170019-1600-1600?v=637721598596900000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--hover"
+                    />
+                </div>
+                <div class="product__info">
+                    <h2>SPIDER MAN</h2>
+                    <p>Camiseta de hombre, manga corta roja de Spiderman</p>
+                    <p class="product__price">$69.900</p>
+                </div>
             </div>
 
-        <div class="product">
-            <div class="product__image">
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/170017-1600-1600?v=637721598348970000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--main"
-                />
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/170019-1600-1600?v=637721598596900000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--hover"
-                />
+            <div class="product__item">
+                <div class="product__image">
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/164821-1600-1600?v=637399245410730000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--main"
+                    />
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/164824-1600-1600?v=637399245417770000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--hover"
+                    />
+                </div>
+                <div class="product__info">
+                    <h2>THANOS</h2>
+                    <p>Camiseta de mujer, manga corta violeta de Thanos</p>
+                    <p class="product__price">$50.500</p>
+                </div>
             </div>
+            
             <div class="product__info">
-                <h2>SPIDER MAN</h2>
-                <p>Camiseta de hombre, manga corta roja de Spiderman</p>
-                <p class="product__price">$69.900</p>
-            </div>
-            <div class="product__image">
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/164821-1600-1600?v=637399245410730000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--main"
-                />
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/164824-1600-1600?v=637399245417770000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--hover"
-                />
-            </div>
-            <div class="product__info">
-                <h2>THANOS</h2>
-                <p>Camiseta de mujer, manga corta violeta de Thanos</p>
-                <p class="product__price">$50.500</p>
-            </div>
-            <div class="product__image">
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/166914-1600-1600?v=637403598315870000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--main"
-                />
-                <img
-                    src="https://moviesshopco.vtexassets.com/arquivos/ids/166916-1600-1600?v=637403598329300000&width=1600&height=1600&aspect=true"
-                    alt=""
-                    class="product__image--hover"
-                />
-            </div>
-            <div class="product__info">
-                <h2>HULK</h2>
-                <p>Camiseta de hombre, manga
-                    corta negra de Hulk </p>
-                <p class="product__price">$70.900</p>
-        </div>
-
-        
+                <div class="product__image">
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/166914-1600-1600?v=637403598315870000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--main"
+                    />
+                    <img
+                        src="https://moviesshopco.vtexassets.com/arquivos/ids/166916-1600-1600?v=637403598329300000&width=1600&height=1600&aspect=true"
+                        alt=""
+                        class="product__image--hover"
+                    />
+                </div>
+                <div class="product__info">
+                    <h2>HULK</h2>
+                    <p>Camiseta de hombre, manga
+                        corta negra de Hulk </p>
+                    <p class="product__price">$70.900</p>
+            </div>        
 
         </article>
 
@@ -186,6 +199,33 @@
                 alt=""
                 class="newCollections__image--hover"
             />
+
+        <div class="newCollection__info">
+            <h2>HAWKEYE</h2>
+            <p>Camiseta de hombre, manga
+                corta negra de Hulk </p>
+            <p class="product__price">$70.900</p>
+    </div>
+
+    <div class="newCollections__image">
+        <img
+                src="https://hottopic.scene7.com/is/image/HotTopic/17561160_hi?$productMainDesktop$"
+                alt=""
+                class="newCollections__image--main"
+            />
+
+        <img
+            src="https://hottopic.scene7.com/is/image/HotTopic/17366852_hi?$productMainDesktop$"
+            alt=""
+            class="newCollections__image--hover"
+        />
+        
+    <div class="newCollection__info">
+        <h2>HAWKEYE</h2>
+        <p>Camiseta de hombre, manga
+            corta negra de Hulk </p>
+        <p class="newCollection__price">$70.900</p>
+
         </div>
 
         </article>

@@ -86,6 +86,11 @@ h2 b {
 }
 */
 
+.characters {
+    margin-top: 20px; /*Espacios entre arriba y abajo*/
+    width: 100%;
+}
+
 .characters img {
     width: 100%;
 }
@@ -99,9 +104,15 @@ h2 b {
 }
 
 .newCollections {
+    width: 50%;
     padding: 40px 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
 }
