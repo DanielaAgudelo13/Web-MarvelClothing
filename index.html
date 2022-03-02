@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/main.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <style>
         body {
             width: 100%;
@@ -161,14 +162,57 @@
 
     </article>
 
-    <article class="characters">
-        <div class="clothing__gallery">
-            </p>
-            <h2>TUS PERSONAJES FAVORITOS
-                EN UN SOLO LUGAR</h2>
-            <h2><b>Elige tu personaje y descubre nuevas prendas disponibles</b></h2>
+    <div class="clothing__title">
+        </p>
+        <h2>TUS PERSONAJES FAVORITOS
+            EN UN SOLO LUGAR</h2>
+        <h2><b>Elige tu personaje y descubre nuevas prendas disponibles</b></h2>
+    </div>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Element wrapper -->
+            <div class="swiper-slide">
+                <img src="./data/images/IRONMAN.jpg" />
+            </div>
+            <!-- Element wrapper -->
+            <div class="swiper-slide">
+                <img src="./data/images/CAPIAMERICA.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/WANDA.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/SPIDERMAN.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/DOCT.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/GUARDIANES.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/LOKI.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/BLACKWIDOW.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/THOR.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/CAPITANAMARV.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./data/images/HULK.jpg" />
+            </div>
         </div>
-        <img src="./data/images/ESONOES.png" alt="" />
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <article class="characters">
 
     </article>
 
@@ -227,17 +271,40 @@
 <footer class="footer">
     <div class="footer__info">
         <div class="footer__info__column">
-            <h1>title</h1>
+            <h1>MARVEL CLOTHING</h1>
             <hr>
-            <p>contenido</p>
+            <p> ¿Quiénes somos?
+            <p>
+                Trabaja con nosotros
+            <p>
+                Peticiones, quejas y reclamos
+            <p>
+                Términos y condiciones
+            <p>
+                Política de entrega y devoluciones
+            <p>
+                Política de privacidad
+            <p>
+                Tratamiento de datos
+            <p>
+                ¿No logras iniciar sesión?</p>
         </div>
         <div class="footer__info__column">
-            <h1>title</h1>
+            <h1>CONTACTO</h1>
             <hr>
-            <p>contenido</p>
+            <div class="footer__info__column__row">
+                <img src="./data/images/LIKE.svg" alt="">
+                <p>info@marvelclothing.com</p>
+            </div>
+           
+            <p>
+                (+57)3024686521
+            <p>
+                Calle 1a1 #70d-25 Cali, Colombia
+            </p>
         </div>
         <div class="footer__info__column">
-            <h1>title</h1>
+            <h1>SIGUENOS</h1>
             <hr>
             <p>contenido</p>
         </div>
@@ -245,20 +312,45 @@
     </div>
 
     <div class="footer__copyright">
-        <p>Copyright. Allrights reserved.</p>
+        <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p>
     </div>
 
 </footer>
 
 <script src="./js/banner.js"></script>
 
-<!--Librería para interacciones y arriba hay otro
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+<!--Librería para interacciones y arriba hay otro  
     
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
       
         const swiper = new Swiper(...)
       </script>
+
       -->
+
 
 </html>
