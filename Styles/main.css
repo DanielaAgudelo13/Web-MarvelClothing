@@ -197,13 +197,13 @@ footer hr {
 
 .footer__copyright {
     background-color: #fff;
-    padding: 50px;
+    padding: 20px;
 }
 
 .footer__copyright p {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 140%;
     color: black;
     text-align: center;
