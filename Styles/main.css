@@ -130,6 +130,15 @@ h2 b {
     justify-content: center;
 }
 
+.newCollections__image {
+    max-width: none;
+}
+
+.newCollections__item {
+    display: flex;
+    flex-direction: column;
+}
+
 .newCollections__info {
     width: 25%;
     padding-right: 60px;
@@ -152,6 +161,43 @@ h2 b {
 .infoClothes__info {
     align-self: baseline;
     padding: 50px 70px;
+    width: 100%;
+}
+
+.infoClothes__reel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+}
+
+.infoClothes__photos {
+    position: relative;
+    width: 413px;
+    height: 598px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.infoClothes__photos img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.infoClothes__photos p {
+    color: white;
+}
+
+.infoClothes__photos:hover img {
+    transform: translate(0, -100%);
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .subscriptionForm {
