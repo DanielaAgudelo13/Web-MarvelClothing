@@ -91,7 +91,7 @@ h2 b {
 */
 
 .characters {
-    margin-top: 90px; /*Espacios entre arriba y abajo*/
+    margin-top: 90px; /*Espacios entre arriba y abajo  (flex-wrap: wrap;)*/
     width: 100%;
 }
 
@@ -123,17 +123,35 @@ h2 b {
 }
 
 .newCollections {
-    width: 50%;
-    padding: 40px 50px;
+    width: 70%;
+    padding: 60px 0;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.newCollections__info {
+    width: 25%;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.newCollections__item {
+    display: flex;
+    flex-direction: column;
 }
 
 .product__item {
     display: flex;
     flex-direction: column;
+}
+
+.infoClothes__info {
+    align-self: baseline;
+    padding: 50px 70px;
 }
 
 .subscriptionForm {
