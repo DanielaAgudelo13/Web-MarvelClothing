@@ -1,0 +1,9 @@
+@media all and (max-width: 413px) {
+    .stepsBuy {
+        width: 100%;
+    }
+
+    .product__image--main {
+        height: 100px;
+    }
+}
