@@ -60,6 +60,7 @@
 
     .infoClothes__reel {
         flex-direction: column;
+        display: flex;
     }
 
     .infoClothes__photos {
