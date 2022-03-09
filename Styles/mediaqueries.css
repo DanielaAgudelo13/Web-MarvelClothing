@@ -37,11 +37,22 @@
         flex-direction: column;
     }
 
+    .infoClothes__reel {
+        flex-direction: column;
+    }
+
     .subscriptionForm {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .subscriptionForm__input {
+        min-width: 0px !important;
     }
 
     .footer__info {
         flex-direction: column;
+        gap: 36px;
+        padding: 36px 26px;
     }
 }
