@@ -33,12 +33,38 @@
 
     .product {
         padding: 0px 40px;
-        width: 60%;
+        flex-direction: column;
+    }
+
+    .product__image {
+        height: 300px;
+    }
+
+    .product__image img {
+        height: 300px;
+    }
+
+    .clothing__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .infoClothes__info {
+        text-align: center;
+        gap: 20px;
+        display: flex;
         flex-direction: column;
     }
 
     .infoClothes__reel {
         flex-direction: column;
+    }
+
+    .infoClothes__photos {
+        height: 350px;
+        width: 100%;
     }
 
     .subscriptionForm {

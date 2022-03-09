@@ -189,8 +189,8 @@ h2 b {
 
 .infoClothes__photos {
     position: relative;
-    width: 413px;
-    height: 598px;
+    max-width: 413px;
+    max-height: 598px;
     background-color: black;
     overflow: hidden;
     display: flex;
