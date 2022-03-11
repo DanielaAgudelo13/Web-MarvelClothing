@@ -130,7 +130,7 @@ h2 b {
 
 .clothing__info {
     width: 25%;
-    padding-right: 60px;
+    padding: 0px 20px;
 
     display: flex;
     flex-direction: column;
@@ -156,7 +156,6 @@ h2 b {
 .product__image--main,
 .product__image--hover {
     width: 100%;
-    max-height: 400px;
     object-fit: contain;
     background-color: #f5f5f5;
 }

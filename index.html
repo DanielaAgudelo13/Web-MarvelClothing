@@ -14,45 +14,45 @@
 
 <body>
 
-<header class="header">
-    <nav class="header__nav">
-        <div>
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <img src="./data/images/Group 26.png" alt="logo.svg" />
+                <ul>
+                    <a href="#">Hombre</a>
+                    <a href="#">Mujer</a>
+                    <a href="#">Nuevo</a>
+                    <a href="#">Promoción</a>
+                </ul>
+            </div>
+
+            <div class="header__btns">
+                <input type="text" placeholder="Encuentra tu preferido" />
+                <img src="./data/images/Login.svg" alt="" />
+                <img src="./data/images/LIKE.svg" alt="" />
+                <img src="./data/images/BUY.svg" alt="" />
+            </div>
+        </nav>
+
+        <!--Responsive -->
+
+        <nav class="header__nav--mobile header__nav">
+            <div>
+                <img src="./data/images/BURGER.svg" alt="" />
+                <img src="./data/images/Lupita.svg" alt="" />
+            </div>
             <img src="./data/images/Group 26.png" alt="logo.svg" />
-            <ul>
-                <a href="#">Hombre</a>
-                <a href="#">Mujer</a>
-                <a href="#">Nuevo</a>
-                <a href="#">Promoción</a>
-            </ul>
-        </div>
-
-        <div class="header__btns">
-            <input type="text" placeholder="Encuentra tu preferido" />
-            <img src="./data/images/Login.svg" alt="" />
-            <img src="./data/images/LIKE.svg" alt="" />
-            <img src="./data/images/BUY.svg" alt="" />
-        </div>
-    </nav>
-
-    <!--Responsive -->  
-
-    <nav class="header__nav--mobile header__nav">
-        <div>
-            <img src="./data/images/BURGER.svg" alt="" /> 
-            <img src="./data/images/Lupita.svg" alt="" /> 
-        </div>
-        <img src="./data/images/Group 26.png" alt="logo.svg" />
-        <div>
-            <img src="./data/images/Login.svg" alt="" />
-            <img src="./data/images/BUY.svg" alt="" /> 
-        </div>
-    </nav>
+            <div>
+                <img src="./data/images/Login.svg" alt="" />
+                <img src="./data/images/BUY.svg" alt="" />
+            </div>
+        </nav>
 
 
-    <article class="banner">
-        <img src="./data/images/BannerStranger.jpg" alt="" />
-    </article>
-</header>
+        <article class="banner">
+            <img src="./data/images/BannerStranger.jpg" alt="" />
+        </article>
+    </header>
     <!--Todo el contenido de la página web-->
 
 
@@ -98,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="product__info">
+            <div class="product__item">
                 <div class="product__image">
                     <img src="https://moviesshopco.vtexassets.com/arquivos/ids/166914-1600-1600?v=637403598315870000&width=1600&height=1600&aspect=true"
                         alt="" class="product__image--main" />
@@ -178,26 +178,22 @@
         <section class="product">
             <div class="product__item">
                 <div class="product__image">
-                    <img src="./data/images/powergirl1.jpg" 
-                        alt="" class="product__image--main" />
-                    <img src="./data/images/powergirl2.jpg"
-                        alt="" class="product__image--hover" />
+                    <img src="./data/images/powergirl1.jpg" alt="" class="product__image--main" />
+                    <img src="./data/images/powergirl2.jpg" alt="" class="product__image--hover" />
                 </div>
 
                 <div class="product__info">
                     <h2>LADIES MARVEL</h2>
                     <p>Camiseta de mujer, manga
-                    corta negra de las chicas de Marvel edición retro </p>
+                        corta negra de las chicas de Marvel edición retro </p>
                     <p class="product__price">$90.000</p>
                 </div>
             </div>
 
             <div class="product__item">
                 <div class="product__image">
-                    <img src="./data/images/eternals1.jpg" 
-                        alt="" class="product__image--main" />
-                    <img src="./data/images/eternals2.jpg"
-                        alt="" class="product__image--hover" />
+                    <img src="./data/images/eternals1.jpg" alt="" class="product__image--main" />
+                    <img src="./data/images/eternals2.jpg" alt="" class="product__image--hover" />
                 </div>
                 <div class="product__info">
                     <h2>ETERNALS</h2>
@@ -209,10 +205,8 @@
 
             <div class="product__item">
                 <div class="product__image">
-                    <img src="./data/images/marvel1.jpg"
-                        alt="" class="product__image--main" />
-                    <img src="./data/images/marvel1 (1).jpg"
-                        alt="" class="product__image--hover" />
+                    <img src="./data/images/marvel1.jpg" alt="" class="product__image--main" />
+                    <img src="./data/images/marvel1 (1).jpg" alt="" class="product__image--hover" />
                 </div>
 
                 <div class="product__info">
@@ -229,24 +223,26 @@
 
     <article class="infoClothes">
     </article>
-    
-        <div class="infoClothes__info">
-            <h1>NUESTRAS PRENDAS</h1>
-            <section class="infoClothes__reel">
-                <div class="infoClothes__photos">
-                    <p>Camisetas de algodón con estampados realistas. Es recomendable tener un buen cuidado, leer las indicaciones en la etiqueta</p>
-                    <img src="./data/images/TSHIRTS.jpg" alt="">
-                </div>
-                <div class="infoClothes__photos">
-                    <p>Pijamas de algodón y seda donde encontrarás diferentes estilos de Marvel, anímate a utilizarlas de la manera que quieras</p>
-                    <img src="./data/images/PIJAMAS.jpg" alt="">
-                </div>
-                <div class="infoClothes__photos">
-                    <p>Buzos de algodón y poliéster donde encontrarás diferentes modelos y colores para mujer y hombre </p>
-                    <img src="./data/images/JOGGINGSUIT.jpg" alt="">
-                </div>
-            </section>
-        </div>
+
+    <div class="infoClothes__info">
+        <h1>NUESTRAS PRENDAS</h1>
+        <section class="infoClothes__reel">
+            <div class="infoClothes__photos">
+                <p>Camisetas de algodón con estampados realistas. Es recomendable tener un buen cuidado, leer las
+                    indicaciones en la etiqueta</p>
+                <img src="./data/images/TSHIRTS.jpg" alt="">
+            </div>
+            <div class="infoClothes__photos">
+                <p>Pijamas de algodón y seda donde encontrarás diferentes estilos de Marvel, anímate a utilizarlas de la
+                    manera que quieras</p>
+                <img src="./data/images/PIJAMAS.jpg" alt="">
+            </div>
+            <div class="infoClothes__photos">
+                <p>Buzos de algodón y poliéster donde encontrarás diferentes modelos y colores para mujer y hombre </p>
+                <img src="./data/images/JOGGINGSUIT.jpg" alt="">
+            </div>
+        </section>
+    </div>
 
     <article class="subscriptionForm">
         <p>Suscríbete y obtén el 20% de descuento</p>
@@ -287,7 +283,7 @@
                 <img src="./data/images/MENSAJE.png" alt="">
                 <p>info@marvelclothing.com</p>
             </div>
-           
+
             <p>
                 <img src="./data/images/WHATSAPP.png" alt="">
                 (+57)3024686521
@@ -300,10 +296,10 @@
             <h1>SIGUENOS</h1>
             <hr>
             <div class="footer__info__column__row">
-            <img src="./data/images/INSTAGRAM.png" alt="">
-            <img src="./data/images/FACEBOOK.png" alt="">
-            <img src="./data/images/TIKTOK.png" alt="">
-        </div>
+                <img src="./data/images/INSTAGRAM.png" alt="">
+                <img src="./data/images/FACEBOOK.png" alt="">
+                <img src="./data/images/TIKTOK.png" alt="">
+            </div>
         </div>
 
     </div>
