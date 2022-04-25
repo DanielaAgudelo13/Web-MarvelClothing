@@ -1,0 +1,72 @@
+/*Importe la fuente para la pág web*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "header";
+@import "clothing";
+@import "infoClothes";
+@import "product";
+@import "swiper";
+@import "subscriptionForm";
+@import "mediaqueries";
+@import "footer";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.html,
+body {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    overflow: hidden; /*Se esconde las otras imagenes segun otro metodo*/
+}
+
+.banner img {
+    width: 100%;
+}
+
+.stepsBuy {
+    width: 100%;
+}
+
+h1 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    /* identical to box height */
+
+    color: #1e232f;
+}
+
+h1 b {
+    font-weight: bolder;
+}
+/*
+h2 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+}
+
+h2 b {
+    font-weight: medium;
+    font-size: 24px;
+}
+*/
+
+.characters {
+    margin-top: 90px; /*Espacios entre arriba y abajo  (flex-wrap: wrap;)*/
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}

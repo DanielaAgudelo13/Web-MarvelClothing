@@ -1,0 +1,85 @@
+@media all and (max-width: 413px) {
+    .stepsBuy {
+        width: 100%;
+    }
+
+    .product__image--main {
+        height: 100px;
+    }
+
+    .header__nav--mobile {
+        display: flex !important;
+    }
+
+    .header__nav--mobile img {
+        max-height: 90px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .clothing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clothing__info {
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .product {
+        padding: 0px 40px;
+        flex-direction: column;
+    }
+
+    .product__image {
+        height: 300px;
+    }
+
+    .product__image img {
+        height: 300px;
+    }
+
+    .clothing__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .infoClothes__info {
+        text-align: center;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoClothes__reel {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .infoClothes__photos {
+        height: 350px;
+        width: 100%;
+    }
+
+    .subscriptionForm {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .subscriptionForm__input {
+        min-width: 0px !important;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        gap: 36px;
+        padding: 36px 26px;
+    }
+}
