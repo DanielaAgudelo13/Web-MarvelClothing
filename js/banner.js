@@ -29,3 +29,9 @@ const changeBanner = () => {
 };
 
 setInterval(changeBanner, 5000);
+
+/*.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.location.href = './'
+})*/
