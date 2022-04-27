@@ -1,0 +1,13 @@
+.button {
+    background-color: $red;
+    border: none;
+    padding: 5px 0;
+
+    span {
+        color: #fff;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,5 +1,6 @@
 /*Importe la fuente para la pág web*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import "variables";
 @import "header";
 @import "clothing";
 @import "infoClothes";
@@ -8,6 +9,8 @@
 @import "subscriptionForm";
 @import "mediaqueries";
 @import "footer";
+@import "login";
+@import "button";
 
 * {
     margin: 0;
