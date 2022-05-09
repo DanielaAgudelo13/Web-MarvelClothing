@@ -434,7 +434,8 @@
   text-align: center;
 }
 
-.login {
+.login,
+.register {
   min-height: 500px;
   background-color: #fff;
   display: -webkit-box;
@@ -452,7 +453,15 @@
           justify-content: center;
 }
 
-.login__form {
+.login h1,
+.login a,
+.register h1,
+.register a {
+  text-align: center;
+}
+
+.login__form,
+.register__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,7 +474,8 @@
   gap: 20px;
 }
 
-.login__input {
+.login__input,
+.register__input {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,16 +527,29 @@
           flex-direction: center;
 }
 
-.menClothes__product {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.menClothes .product__div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menClothes .product {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 20px;
   /*Separacion entre las imagenes*/
 }
 
-.menClothes__product__item {
+.menClothes .product__item {
   width: 100%;
   max-width: 400px;
 }
@@ -557,16 +580,29 @@
           flex-direction: center;
 }
 
-.womanClothes__product {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.womanClothes .product__div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.womanClothes .product {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 20px;
   /*Separacion entre las imagenes*/
 }
 
-.womanClothes__product__item {
+.womanClothes .product__item {
   width: 100%;
   max-width: 400px;
 }

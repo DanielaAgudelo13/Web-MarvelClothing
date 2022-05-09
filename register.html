@@ -6,10 +6,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
 
 <body>
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <a href="">
+                    <img src="./data/images/Group 26.png" alt="logo.svg" />
+                </a>
+                <ul>
+                    <a href="./menClothes.html">Hombre
+                    </a>
+                    <a href="./womanClothes.html">Mujer
+                    </a>
+                    <a href="#">Nuevo</a>
+                    <a href="#">Promoción</a>
+                </ul>
+            </div>
+
+            <div class="header__btns">
+                <input type="text" placeholder="Encuentra tu preferido" />
+                <a href="./register.html">
+                    <img src="./data/images/register.svg" alt="" />
+                </a>
+                <img src="./data/images/LIKE.svg" alt="" />
+                <a href="./shoppingCart.html">
+                    <img src="./data/images/BUY.svg" alt="" />
+                </a>
+            </div>
+        </nav>
+
+        <!--Responsive -->
+
+        <nav class="header__nav--mobile header__nav">
+            <div>
+                <img src="./data/images/BURGER.svg" alt="" />
+                <img src="./data/images/Lupita.svg" alt="" />
+            </div>
+            <img src="./data/images/Group 26.png" alt="logo.svg" />
+            <div>
+                <img src="./data/images/register.svg" alt="" />
+                <img src="./data/images/BUY.svg" alt="" />
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="register">
+        <form class="register__form">
+
+            <h1>
+                REGISTRATE
+            </h1>
+
+            <div class="register__input">
+                <label class="register__label" for="email">
+                    Email
+                </label>
+
+                <input class="register__field" type="email" name="email" id="email" placeholder="Ingresa tu email">
+            </div>
+
+            <div class="register__input">
+                <label class="register__label" for="password">
+                    Contraseña
+                </label>
+
+                <input class="register__field" type="password" name="password" id="password"
+                    placeholder="Ingrese su contraseña">
+
+            </div>
+
+            <button class="button">
+                <span>Enviar</span>
+            </button>
+
+            <a href="./login.html">
+                ¿Ya tienes una cuenta? Inicia Sesión
+            </a>
+
+        </form>
+
+    </section>
 
 </body>
+
+<footer class="footer">
+    <div class="footer__info">
+        <div class="footer__info__column">
+            <h1>MARVEL CLOTHING</h1>
+            <hr>
+            <p> ¿Quiénes somos?
+            <p>
+                Trabaja con nosotros
+            <p>
+                Peticiones, quejas y reclamos
+            <p>
+                Términos y condiciones
+            <p>
+                Política de entrega y devoluciones
+            <p>
+                Política de privacidad
+            <p>
+                Tratamiento de datos
+            <p>
+                ¿No logras iniciar sesión?</p>
+        </div>
+        <div class="footer__info__column">
+            <h1>CONTACTO</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="./data/images/MENSAJE.png" alt="">
+                <p>info@marvelclothing.com</p>
+            </div>
+
+            <p>
+                <img src="./data/images/WHATSAPP.png" alt="">
+                (+57)3024686521
+            <p>
+                <img src="./data/images/UBICACION.png" alt="">
+                Calle 1a1 #70d-25 Cali, Colombia
+            </p>
+        </div>
+        <div class="footer__info__column">
+            <h1>SIGUENOS</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="./data/images/INSTAGRAM.png" alt="">
+                <img src="./data/images/FACEBOOK.png" alt="">
+                <img src="./data/images/TIKTOK.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer__copyright">
+        <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p>
+    </div>
+
+</footer>
 
 </html>
