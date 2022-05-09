@@ -1,4 +1,22 @@
 {
+  "name": "marvel-clothing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielaAgudelo13/Web-MarvelClothing.git"
+  },
+  "author": "Daniela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielaAgudelo13/Web-MarvelClothing/issues"
+  },
+  "homepage": "https://github.com/DanielaAgudelo13/Web-MarvelClothing#readme",
+  "description": "",
   "dependencies": {
     "firebase": "^9.6.11"
   }

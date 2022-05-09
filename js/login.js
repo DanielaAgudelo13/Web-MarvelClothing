@@ -1,5 +1,5 @@
-import { db, auth } from "../Firebase/firebaseConfig";
-import { login, createUser, addUserToDatabase } from "../Firebase/auth";
+import { db, auth } from "./firebaseConfig";
+import { login, createUser, addUserToDatabase } from "./auth";
 
 const loginForm = document.getElementById(".login__form");
 const createUserForm = document.getElementById(".register__form");
@@ -17,6 +17,8 @@ createUserForm.addEventListener("submit", async (e) => {
         password,
         isAdmin: false,
     };
+
+    alert(userInfo.name);
 
     const newUser = await createUser(auth, userInfo);
     await addUserToDatabase(db, newUser.uid, userInfo);

@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./Styles/styles.css" />
 </head>
 
 <body>
-
     <header class="header">
         <nav class="header__nav">
             <div>
@@ -18,10 +17,8 @@
                     <img src="./data/images/Group 26.png" alt="logo.svg" />
                 </a>
                 <ul>
-                    <a href="./menClothes.html">Hombre
-                    </a>
-                    <a href="./womanClothes.html">Mujer
-                    </a>
+                    <a href="./menClothes.html">Hombre </a>
+                    <a href="./womanClothes.html">Mujer </a>
                     <a href="#">Nuevo</a>
                     <a href="#">Promoción</a>
                 </ul>
@@ -52,29 +49,65 @@
                 <img src="./data/images/BUY.svg" alt="" />
             </div>
         </nav>
-
     </header>
 
-    <section class="menClothes">
-        PRODUCTO DE COMPRA
+    <section class="shoppingCart">
+        <section class="cartList">
+            <div class="cartList__titles">
+                <h1 class="cartList__titles__info">Producto</h1>
+                <h1 class="cartList__titles__quantity">Cantidad</h1>
+                <h1 class="cartList__titles__price">Precio</h1>
+            </div>
 
+            <div class="card__product">
+                <div class="card__product__info">
+                    <img class="card__product__info__img" src="./data/images/PIJAMAS.jpg" alt="productImage.png" />
+                    <p class="card__product__info__text">Camiseta de hombre, manga corta azul de Hawkeye</p>
+                </div>
+                <div class="card__product__quantity">
+                    <p>1</p>
+                </div>
+                <div class="card__product__price">
+                    <p>$65.900</p>
+                </div>
+                <div class="card__product__erase">
+                    <img src="./data/images/trashCan.svg" alt="trashCan.svg">
+                </div>
+            </div>
 
+            <div class="card__product">
+                <div class="card__product__info">
+                    <img class="card__product__info__img" src="./data/images/PIJAMAS.jpg" alt="productImage.png" />
+                    <p class="card__product__info__text">Camiseta de hombre, manga corta azul de Hawkeye</p>
+                </div>
+                <div class="card__product__quantity">
+                    <p>1</p>
+                </div>
+                <div class="card__product__price">
+                    <p>$65.900</p>
+                </div>
+                <div class="card__product__erase">
+                    <img src="./data/images/trashCan.svg" alt="trashCan.svg">
+                </div>
+            </div>
+        </section>
 
-        <img src="./data/images/PAGOS.png" alt="">
+        <img src="./data/images/PAGOS.png" alt="" />
     </section>
-
 
     <article class="subscriptionForm">
         <p>Suscríbete y obtén el 20% de descuento</p>
-        <input class="subscriptionForm__input" placeholder="Ingresa tu correo electrónico" type="text">
+        <input class="subscriptionForm__input" placeholder="Ingresa tu correo electrónico" type="text" />
         <button class="subscriptionForm__btn">Enviar</button>
-
     </article>
 </body>
 
 <footer class="footer">
     <div class="footer__copyright">
-        <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p>
+        <p>
+            © Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights
+            Reserved.
+        </p>
     </div>
 </footer>
 
