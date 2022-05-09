@@ -506,7 +506,7 @@
   cursor: pointer;
 }
 
-.menClothes {
+.shop {
   min-height: 800px;
   background-color: #fff;
   display: -webkit-box;
@@ -521,7 +521,7 @@
           align-items: center;
 }
 
-.menClothes__info {
+.shop__info {
   padding: 60px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,7 +532,7 @@
           flex-direction: center;
 }
 
-.menClothes .product__div {
+.shop .product__div {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -541,7 +541,7 @@
       flex-wrap: wrap;
 }
 
-.menClothes .product {
+.shop .product {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -554,60 +554,7 @@
   /*Separacion entre las imagenes*/
 }
 
-.menClothes .product__item {
-  width: 100%;
-  max-width: 400px;
-}
-
-.womanClothes {
-  min-height: 800px;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.womanClothes__info {
-  padding: 60px 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: center;
-          flex-direction: center;
-}
-
-.womanClothes .product__div {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.womanClothes .product {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-  /*Separacion entre las imagenes*/
-}
-
-.womanClothes .product__item {
+.shop .product__item {
   width: 100%;
   max-width: 400px;
 }
