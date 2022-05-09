@@ -1,9 +1,9 @@
-import { auth } from "./firebaseConfig";
-import { login } from "./auth";
+import { db, auth } from "./firebaseConfig";
+import { createUser, addUserToDatabase } from "./auth";
 
 const createUserForm = document.getElementById("createForm");
 
-/*createUserForm.addEventListener("submit", async (e) => {
+createUserForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const name = createUserForm.name.value;
@@ -24,13 +24,4 @@ const createUserForm = document.getElementById("createForm");
 
     alert(`Bienvenido, ${name}`);
     // window.location.href = "/products.html";
-});*/
-
-createUserForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const email = createUserForm.email.value;
-    const password = createUserForm.password.value;
-
-    login(auth, email, password);
 });
