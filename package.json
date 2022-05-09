@@ -2,8 +2,12 @@
   "name": "marvel-clothing",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "process": "^0.11.10"
+  },
   "scripts": {
+    "dev": "parcel ./*html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

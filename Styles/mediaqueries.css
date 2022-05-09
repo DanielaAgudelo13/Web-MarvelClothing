@@ -11,9 +11,17 @@
         display: flex !important;
     }
 
+    /*.header__nav--ipad {
+        display: flex !important;
+    } */
+
     .header__nav--mobile img {
         max-height: 90px;
     }
+
+    /* .header__nav--ipad img {
+        max-height: 90px;
+    } */
 
     .header__nav {
         display: none;

@@ -641,7 +641,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 .cartList__titles {
