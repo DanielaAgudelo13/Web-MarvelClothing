@@ -264,7 +264,7 @@
   font-size: 20px;
 }
 
-@media all and (max-width: 413px) {
+@media all and (max-width: 768px) {
   .stepsBuy {
     width: 100%;
   }
@@ -305,6 +305,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .product__image {
     height: 300px;
@@ -364,6 +370,11 @@
             flex-direction: column;
     gap: 36px;
     padding: 36px 26px;
+  }
+  .shop__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -773,5 +784,9 @@ h2 b {
 
 .characters img {
   width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

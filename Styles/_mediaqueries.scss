@@ -1,4 +1,4 @@
-@media all and (max-width: 413px) {
+@media all and (max-width: 768px) {
     .stepsBuy {
         width: 100%;
     }
@@ -34,6 +34,8 @@
     .product {
         padding: 0px 40px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .product__image {
@@ -81,5 +83,9 @@
         flex-direction: column;
         gap: 36px;
         padding: 36px 26px;
+    }
+
+    .shop__info {
+        justify-content: center;
     }
 }

@@ -2,7 +2,8 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
 } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore";
+import { doc, setDoc, getDoc } from "firebase/firestore";
+import { db } from "./firebaseConfig";
 
 async function createUser(auth, { email, password }) {
     try {
@@ -30,7 +31,10 @@ async function login(auth, email, password) {
             email,
             password
         );
+
         alert(`Bienvenido, usuario ${user.email}`);
+
+        validateAdmin(user.uid);
     } catch (e) {
         alert("Correo o contraseña inválida :(");
     }
@@ -39,6 +43,23 @@ async function login(auth, email, password) {
 async function addUserToDatabase(db, userId, userInfo = {}) {
     try {
         await setDoc(doc(db, "users", userId), userInfo);
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+async function validateAdmin(id) {
+    const docRef = doc(db, "users", id);
+    try {
+        const docSnap = await getDoc(docRef);
+        const data = docSnap.data();
+        const isAdmin = data.isAdmin;
+
+        if (isAdmin) {
+            window.location.href = "/shoppingCart.html";
+        } else {
+            window.location.href = "/shop.html";
+        }
     } catch (e) {
         console.log(e);
     }
