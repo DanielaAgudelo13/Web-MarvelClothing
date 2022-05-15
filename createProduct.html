@@ -5,24 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a new product</title>
 </head>
 
 <body>
+
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <a href="./index.html">
+                    <img src="./data/images/Group 26.png" alt="logo.svg" /> </a>
+                <ul>
+                    <a href="./shop.html">Hombre
+                    </a>
+                    <a href="./shop.html">Mujer
+                    </a>
+                    <a href="#">Nuevo</a>
+                    <a href="#">Promoción</a>
+                </ul>
+            </div>
+
+            <div class="header__btns">
+                <input type="text" placeholder="Encuentra tu preferido" />
+                <a href="./login.html">
+                    <img src="./data/images/Login.svg" alt="" />
+                </a>
+                <img src="./data/images/LIKE.svg" alt="" />
+                <a href="./shoppingCart.html">
+                    <img src="./data/images/BUY.svg" alt="" />
+                </a>
+            </div>
+        </nav>
+
+        <!--Responsive -->
+
+        <!--Responsive -->
+
+        <nav class="header__nav--mobile header__nav">
+            <div>
+                <a href="./shop.html">
+                    <img src="./data/images/BURGER.svg" alt="" />
+                </a>
+                <img src="./data/images/Lupita.svg" alt="" />
+            </div>
+            <a href="./index.html">
+                <img src="./data/images/Group 26.png" alt="logo.svg" />
+            </a>
+            <div>
+                <a href="./login.html">
+                    <img src="./data/images/Login.svg" alt="" />
+                </a>
+                <a href="./shoppingCart.html"><img src="./data/images/BUY.svg" alt="" />
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
     <form id="createProductForm">
+        <h1>
+            Bienvenido Administrador
+        </h1>
+
         <input type="text" name="name" placeholder="Nombre del producto">
-        <textarea name="description"></textarea>
-        <input type="number" name="price">
+        <textarea name="description" placeholder="Descripción"></textarea>
+        <input type="number" name="price" placeholder="Precio">
         <select name="category">
-            <option value="console">Consolas</option>
-            <option value="games">Video juegos</option>
-            <option value="accesories">Accesorios</option>
+            <option value="console">Mujer</option>
+            <option value="games">Hombre</option>
+            <option value="accesories">Nuevo</option>
+            <option value="accesories">Promoción</option>
         </select>
         <input type="file" name="images" multiple>
         <input type="submit" value="Crear producto">
     </form>
-    <a href="./test/index.html">Testing links</a>
-    <script src="./src//scripts/createProduct.js" type="module"></script>
+    <!--<a href="./test/index.html">Testing links</a> -->
+    <script src="./js/createProduct.js" type="module"></script>
 </body>
+
+<footer class="footer">
+    <div class="footer__info">
+        <div class="footer__info__column">
+            <h1>MARVEL CLOTHING</h1>
+            <hr>
+            <p> ¿Quiénes somos?
+            <p>
+                Trabaja con nosotros
+            <p>
+                Peticiones, quejas y reclamos
+            <p>
+                Términos y condiciones
+            <p>
+                Política de entrega y devoluciones
+            <p>
+                Política de privacidad
+            <p>
+                Tratamiento de datos
+            <p>
+                ¿No logras iniciar sesión?</p>
+        </div>
+        <div class="footer__info__column">
+            <h1>CONTACTO</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="./data/images/MENSAJE.png" alt="">
+                <p>info@marvelclothing.com</p>
+            </div>
+
+            <p>
+                <img src="./data/images/WHATSAPP.png" alt="">
+                (+57)3024686521
+            <p>
+                <img src="./data/images/UBICACION.png" alt="">
+                Calle 1a1 #70d-25 Cali, Colombia
+            </p>
+        </div>
+        <div class="footer__info__column">
+            <h1>SIGUENOS</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="./data/images/INSTAGRAM.png" alt="">
+                <img src="./data/images/FACEBOOK.png" alt="">
+                <img src="./data/images/TIKTOK.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer__copyright">
+        <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p>
+    </div>
+
+</footer>
 
 </html>
