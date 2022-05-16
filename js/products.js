@@ -10,6 +10,7 @@ async function getProducts(db) {
                 id: doc.id,
             };
         });
+        console.log();
         return products;
     } catch (e) {
         console.log(e);

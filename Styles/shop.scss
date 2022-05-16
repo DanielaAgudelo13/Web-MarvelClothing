@@ -6,7 +6,7 @@
     align-items: center;
 
     &__info {
-        padding: 60px 100px;
+        padding: 80px 120px;
         display: flex;
         flex-direction: center;
     }
@@ -21,13 +21,14 @@
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        gap: 20px;
+        gap: 200px;
+        padding: 100px 200px;
 
         /*Separacion entre las imagenes*/
 
         &__item {
-            width: 100%;
-            max-width: 400px;
+            width: 200%;
+            max-width: 800px;
         }
     }
 }

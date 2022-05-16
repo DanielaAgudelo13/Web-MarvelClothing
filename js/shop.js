@@ -1,8 +1,8 @@
 import { db, auth } from "./app";
 import { onAuthStateChanged } from "firebase/auth";
 import { getProducts } from "./products";
-//import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
-//import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils";
+import { createFirebaseCart, getFirebaseCart } from "./cart";
+import { addProductToCart, getMyLocalCart, currencyFormat } from "./utils";
 
 const productSection = document.querySelector(".product");
 const categoryFilter = document.getElementById("category");
@@ -23,8 +23,6 @@ async function loadProducts() {
 
     products = firebaseProducts;
 }
-
-loadProducts();
 
 function renderProduct(item) {
     const product = document.createElement("a");
@@ -57,9 +55,9 @@ function renderProduct(item) {
 
         <div class="product__info">
             <h2>${item.name}</h2>
-            <p>Camiseta de hombre, manga corta roja de </p>
+            <p>${item.description}</p>
             <p class="product__price">${item.price}</p>
-            <button class="product__cart">Añadir al carrito</button>
+            ${productButtonCart}
         </div>
     </div>
     `;
@@ -118,7 +116,7 @@ categoryFilter.addEventListener("change", (e) => {
 orderFilter.addEventListener("change", (e) => {
     filterBy();
 });
-/*
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         // User is signed in, see docs for a list of available properties
@@ -134,4 +132,3 @@ onAuthStateChanged(auth, async (user) => {
 
     loadProducts();
 });
-*/
