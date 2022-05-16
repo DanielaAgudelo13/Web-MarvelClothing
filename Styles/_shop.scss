@@ -6,25 +6,20 @@
     align-items: center;
 
     &__info {
-        padding: 80px 120px;
+        /*padding: 80px 120px;*/
         display: flex;
         flex-direction: center;
     }
 
     .product__div {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .product {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-        gap: 200px;
-        padding: 100px 200px;
-
         /*Separacion entre las imagenes*/
+        flex-direction: row;
 
         &__item {
             width: 200%;
