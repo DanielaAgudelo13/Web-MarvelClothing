@@ -1,12 +1,14 @@
 import { db, auth } from "./app";
 import { onAuthStateChanged } from "firebase/auth";
 import { getProducts } from "./products";
-/*import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
-import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils"; */
+//import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
+//import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils";
 
-const productSection = document.getElementById("products");
+const productSection = document.querySelector(".product");
 const categoryFilter = document.getElementById("category");
 const orderFilter = document.getElementById("order");
+
+console.log(productSection);
 
 let userLogged = undefined;
 let products = [];
@@ -22,6 +24,8 @@ async function loadProducts() {
     products = firebaseProducts;
 }
 
+loadProducts();
+
 function renderProduct(item) {
     const product = document.createElement("a");
     product.className = "product";
@@ -32,6 +36,8 @@ function renderProduct(item) {
         ? item.images[0]
         : "https://cdn1.iconfinder.com/data/icons/business-company-1/500/image-512.png";
 
+    const secondaryImage = item.images[1];
+
     const isProductAddedToCart = cart.some(
         (productCart) => productCart.id === item.id
     );
@@ -41,12 +47,20 @@ function renderProduct(item) {
         : '<button class="product__cart">Añadir al carrito</button>';
 
     product.innerHTML = `
-    <img src="${coverImage}" alt="" class="product__image">
-    <div class="product__info">
-        <p class="product__category">${item.category}</p> 
-        <h2 class="product__name">${item.name}</h2>
-        <h3 class="product__price">${currencyFormat(item.price)}</h3>
-        ${productButtonCart}
+    <div class="product__item">
+        <div class="product__image">
+            <img src="${coverImage}"
+                alt="" class="product__image--main" />
+            <img src="${secondaryImage}"
+                alt="" class="product__image--hover" />
+        </div>
+
+        <div class="product__info">
+            <h2>${item.name}</h2>
+            <p>Camiseta de hombre, manga corta roja de </p>
+            <p class="product__price">${item.price}</p>
+            <button class="product__cart">Añadir al carrito</button>
+        </div>
     </div>
     `;
 
@@ -104,7 +118,7 @@ categoryFilter.addEventListener("change", (e) => {
 orderFilter.addEventListener("change", (e) => {
     filterBy();
 });
-
+/*
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         // User is signed in, see docs for a list of available properties
@@ -120,3 +134,4 @@ onAuthStateChanged(auth, async (user) => {
 
     loadProducts();
 });
+*/

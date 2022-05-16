@@ -4,6 +4,8 @@ import { addProduct, uploadImages } from "./addProduct";
 
 const createProductForm = document.getElementById("createProductForm");
 
+console.log(createProductForm);
+
 createProductForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     console.log("Create a new product");
