@@ -1,8 +1,8 @@
 import { db, auth } from "./app";
 import { onAuthStateChanged } from "firebase/auth";
-import { getProducts } from "./functions/products";
-import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
-import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils";
+import { getProducts } from "./products";
+/*import { createFirebaseCart, getFirebaseCart } from "./functions/cart";
+import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils"; */
 
 const productSection = document.getElementById("products");
 const categoryFilter = document.getElementById("category");
