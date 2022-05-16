@@ -50,7 +50,7 @@ function renderProduct(product) {
         <p>${product.price}</p>
     </div>
     <div class="card__product__erase">
-        <img src="./data/images/trashCan.svg" alt="trashCan.svg">
+        <img src="https://firebasestorage.googleapis.com/v0/b/marvelclothing-248ba.appspot.com/o/Banner%2FtrashCan.svg?alt=media&token=4909bb66-8560-41ad-ac12-b77cf7875820" alt="trashCan.svg">
     </div>
     `;
 
