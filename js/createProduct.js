@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { storage, db } from "./app";
-import { addProduct, uploadImages } from "./functions/addProduct";
+import { addProduct, uploadImages } from "./addProduct";
 
 const createProductForm = document.getElementById("createProductForm");
 

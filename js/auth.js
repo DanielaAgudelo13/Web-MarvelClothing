@@ -56,7 +56,7 @@ async function validateAdmin(id) {
         const isAdmin = data.isAdmin;
 
         if (isAdmin) {
-            window.location.href = "/shoppingCart.html";
+            window.location.href = "/createProduct.html";
         } else {
             window.location.href = "/shop.html";
         }
