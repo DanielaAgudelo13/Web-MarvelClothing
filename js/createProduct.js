@@ -34,4 +34,6 @@ createProductForm.addEventListener("submit", async (e) => {
     };
 
     await addProduct(db, newProduct);
+
+    alert("Prenda cargada con éxito");
 });

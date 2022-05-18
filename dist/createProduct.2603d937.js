@@ -555,6 +555,7 @@ createProductForm.addEventListener("submit", async (e)=>{
         images: gallery
     };
     await _addProduct.addProduct(_app.db, newProduct);
+    alert("Prenda cargada con éxito");
 });
 
 },{"./app":"5AKj5","./addProduct":"eNCu7"}],"5AKj5":[function(require,module,exports) {
