@@ -593,7 +593,7 @@ _auth.onAuthStateChanged(_app.auth, async (user)=>{
     loadProduct();
 });
 
-},{"./app":"5AKj5","firebase/auth":"drt1f","./utils":"eYK4L","./cart":"dGOwQ","./getProduct":"enhlK"}],"5AKj5":[function(require,module,exports) {
+},{"./app":"5AKj5","firebase/auth":"drt1f","./getProduct":"enhlK","./cart":"dGOwQ","./utils":"eYK4L"}],"5AKj5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "app", ()=>app
@@ -36260,31 +36260,25 @@ function registerStorage() {
 }
 registerStorage();
 
-},{"@firebase/app":"3AcPV","@firebase/util":"ePiK6","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eYK4L":[function(require,module,exports) {
+},{"@firebase/app":"3AcPV","@firebase/util":"ePiK6","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"enhlK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addProductToCart", ()=>addProductToCart
+parcelHelpers.export(exports, "getProduct", ()=>getProduct
 );
-parcelHelpers.export(exports, "getMyLocalCart", ()=>getMyLocalCart
-);
-parcelHelpers.export(exports, "currencyFormat", ()=>currencyFormat
-);
-async function addProductToCart(cart) {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-function getMyLocalCart() {
-    const myCart = localStorage.getItem("cart");
-    return myCart ? JSON.parse(myCart) : [];
-}
-function currencyFormat(price) {
-    return new Intl.NumberFormat("es-CO", {
-        style: "currency",
-        currency: "COP",
-        minimumFractionDigits: 0
-    }).format(price);
+var _app = require("./app");
+var _firestore = require("firebase/firestore");
+async function getProduct(id) {
+    const docRef = _firestore.doc(_app.db, "products", id);
+    try {
+        const docSnap = await _firestore.getDoc(docRef);
+        const data = docSnap.data();
+        return data;
+    } catch (e) {
+        console.log(e);
+    }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dGOwQ":[function(require,module,exports) {
+},{"./app":"5AKj5","firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dGOwQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "createFirebaseCart", ()=>createFirebaseCart
@@ -36308,24 +36302,30 @@ async function getFirebaseCart(db, userId) {
     return result ? result.cart : [];
 }
 
-},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"enhlK":[function(require,module,exports) {
+},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eYK4L":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getProduct", ()=>getProduct
+parcelHelpers.export(exports, "addProductToCart", ()=>addProductToCart
 );
-var _app = require("./app");
-var _firestore = require("firebase/firestore");
-async function getProduct(id) {
-    const docRef = _firestore.doc(_app.db, "products", id);
-    try {
-        const docSnap = await _firestore.getDoc(docRef);
-        const data = docSnap.data();
-        return data;
-    } catch (e) {
-        console.log(e);
-    }
+parcelHelpers.export(exports, "getMyLocalCart", ()=>getMyLocalCart
+);
+parcelHelpers.export(exports, "currencyFormat", ()=>currencyFormat
+);
+async function addProductToCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+function getMyLocalCart() {
+    const myCart = localStorage.getItem("cart");
+    return myCart ? JSON.parse(myCart) : [];
+}
+function currencyFormat(price) {
+    return new Intl.NumberFormat("es-CO", {
+        style: "currency",
+        currency: "COP",
+        minimumFractionDigits: 0
+    }).format(price);
 }
 
-},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./app":"5AKj5"}]},["7zFF3","d3zcm"], "d3zcm", "parcelRequire5220")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7zFF3","d3zcm"], "d3zcm", "parcelRequire5220")
 
 //# sourceMappingURL=product.bdf33fbd.js.map

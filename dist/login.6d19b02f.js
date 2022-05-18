@@ -576,7 +576,7 @@ _auth.onAuthStateChanged(_firebaseConfig.auth, async (user)=>{
     }
 });
 
-},{"./firebaseConfig":"iGlw8","./auth":"90aDw","firebase/auth":"drt1f"}],"90aDw":[function(require,module,exports) {
+},{"firebase/auth":"drt1f","./firebaseConfig":"iGlw8","./auth":"90aDw"}],"90aDw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "createUser", ()=>createUser
