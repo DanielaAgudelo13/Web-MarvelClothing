@@ -26,7 +26,7 @@ async function loadProducts() {
 
 function renderProduct(item) {
     const product = document.createElement("a");
-    product.className = "product";
+    product.className = "product__item";
 
     product.setAttribute("href", `./product.html?id=${item.id}`);
 
@@ -45,7 +45,7 @@ function renderProduct(item) {
         : '<button class="product__cart">Añadir al carrito</button>';
 
     product.innerHTML = `
-    <div class="product__item">
+    
         <div class="product__image">
             <img src="${coverImage}"
                 alt="" class="product__image--main" />
@@ -59,7 +59,7 @@ function renderProduct(item) {
             <p class="product__price">${item.price}</p>
             ${productButtonCart}
         </div>
-    </div>
+    
     `;
 
     productSection.appendChild(product);

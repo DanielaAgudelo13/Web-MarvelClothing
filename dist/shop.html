@@ -1,1 +1,282 @@
-<!DOCTYPE html><html lang="en"><head><script type="module" src="shoppingCart.24933906.js"></script><script type="module" src="shoppingCart.9f8baf32.js"></script><script type="module" src="shoppingCart.70a147e9.js"></script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="createProduct.0116da90.css"></head><body> <header class="header"> <nav class="header__nav"> <div> <a href="index.html"> <img src="Group%2026.61376f31.png" alt="logo.svg"> </a> <ul> <a href="#">Hombre</a> <a href="#">Mujer</a> <a href="#">Nuevo</a> <a href="#">Promoción</a> </ul> </div> <div class="header__btns"> <input type="text" placeholder="Encuentra tu preferido"> <a href="login.html"> <img src="Login.922239cc.svg" alt=""> </a> <img src="LIKE.a0c60032.svg" alt=""> <a href="shoppingCart.html"> <img src="BUY.d0080292.svg" alt=""> </a> </div> </nav>   <nav class="header__nav header__nav--mobile"> <div> <a href="shop.html"> <img src="BURGER.0079d957.svg" alt=""> </a> <img src="Lupita.ed811b8b.svg" alt=""> </div> <a href="index.html"> <img src="Group%2026.61376f31.png" alt="logo.svg"> </a> <div> <a href="login.html"> <img src="Login.922239cc.svg" alt=""> </a> <a href="shoppingCart.html"><img src="BUY.d0080292.svg" alt=""> </a> </div> </nav> </header> <section class="shop__info"> <h1>ROPA</h1> </section> <label for="category">Filtrar por categoría</label> <select name="category" id="category"> <option value="">Todas</option> <option value="woman">Mujer</option> <option value="men">Hombre</option> <option value="new">Nuevo</option> <option value="offer">Promoción</option> </select> <label for="order">Ordenar por</label> <select name="order" id="order"> <option value="">Selecciona una opción</option> <option value="asc">Precio: De mayor a menor</option> <option value="desc">Precio: De menor a mayor</option> </select> <section class="products" id="products">  <div class="loader"></div> </section> <script src="shop.db094f81.js" type="module"></script> <section class="product"> <div class="product__div"> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> </div> <div class="product__div"> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> </div> <div class="product__div"> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> <div class="product__item"> <div class="product__image">  </div> </div> </div> </section> <article class="subscriptionForm"> <p>Suscríbete y obtén el 20% de descuento</p> <input class="subscriptionForm__input" placeholder="Ingresa tu correo electrónico" type="text"> <button class="subscriptionForm__btn">Enviar</button> </article> <script src="shop.db094f81.js" type="module"></script> </body><footer class="footer"> <div class="footer__info"> <div class="footer__info__column"> <h1>MARVEL CLOTHING</h1> <hr> <p> ¿Quiénes somos? </p><p> Trabaja con nosotros </p><p> Peticiones, quejas y reclamos </p><p> Términos y condiciones </p><p> Política de entrega y devoluciones </p><p> Política de privacidad </p><p> Tratamiento de datos </p><p> ¿No logras iniciar sesión?</p> </div> <div class="footer__info__column"> <h1>CONTACTO</h1> <hr> <div class="footer__info__column__row"> <img src="MENSAJE.acb46c31.png" alt=""> <p>info@marvelclothing.com</p> </div> <p> <img src="WHATSAPP.70008e06.png" alt=""> (+57)3024686521 </p><p> <img src="UBICACION.88557b3f.png" alt=""> Calle 1a1 #70d-25 Cali, Colombia </p> </div> <div class="footer__info__column"> <h1>SIGUENOS</h1> <hr> <div class="footer__info__column__row"> <img src="INSTAGRAM.9cecd84b.png" alt=""> <img src="FACEBOOK.cafec996.png" alt=""> <img src="TIKTOK.51391317.png" alt=""> </div> </div> </div> <div class="footer__copyright"> <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p> </div> </footer></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/createProduct.792dcfa4.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <a href="/index.html">
+                    <img src="/Group%2026.7cc098c0.png" alt="logo.svg"> </a>
+                <ul>
+                    <a href="#">Hombre</a>
+                    <a href="#">Mujer</a>
+                    <a href="#">Nuevo</a>
+                    <a href="#">Promoción</a>
+                </ul>
+            </div>
+
+            <div class="header__btns">
+                <input type="text" placeholder="Encuentra tu preferido">
+                <a href="/login.html">
+                    <img src="/Login.d401d5fb.svg" alt="">
+                </a>
+                <img src="/LIKE.95189044.svg" alt="">
+                <a href="/shoppingCart.html">
+                    <img src="/BUY.86e4c112.svg" alt="">
+                </a>
+            </div>
+        </nav>
+
+        <!--Responsive -->
+
+        <!--Responsive -->
+
+        <nav class="header__nav--mobile header__nav">
+            <div>
+                <a href="/shop.html">
+                    <img src="/BURGER.53ba676b.svg" alt="">
+                </a>
+                <img src="/Lupita.a5eff07c.svg" alt="">
+            </div>
+            <a href="/index.html">
+                <img src="/Group%2026.7cc098c0.png" alt="logo.svg">
+            </a>
+            <div>
+                <a href="/login.html">
+                    <img src="/Login.d401d5fb.svg" alt="">
+                </a>
+                <a href="/shoppingCart.html"><img src="/BUY.86e4c112.svg" alt="">
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="shop__info">
+        <h1>ROPA</h1>
+        <div>
+            <label for="category">Filtrar por categoría</label>
+            <select name="category" id="category">
+                <option value="">Todas</option>
+                <option value="woman">Mujer</option>
+                <option value="men">Hombre</option>
+                <option value="new">Nuevo</option>
+                <option value="offer">Promoción</option>
+            </select>
+
+
+            <label for="order">Ordenar por</label>
+            <select name="order" id="order">
+                <option value="">Selecciona una opción</option>
+                <option value="asc">Precio: De mayor a menor</option>
+                <option value="desc">Precio: De menor a mayor</option>
+            </select>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="products" id="products">
+        <!-- <a class="product" href="#">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_757658-MLA49753184518_042022-O.webp" alt="" class="product__image">
+            <div class="product__info">
+                <h2 class="product__name">Nombre</h2>
+                <h3 class="product__price">$50000</h3>
+                <button class="product__cart">Añadir al carrito</button>
+            </div>
+        </a> -->
+
+        <div class="loader"></div>
+
+    </section>
+    <script src="/shop.8fb7982f.js" defer=""></script>
+
+    <section class="product">
+        <div class="product__div">
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://firebasestorage.googleapis.com/v0/b/marvelclothing-248ba.appspot.com/o/products%2F171507-1600-1600.webp?alt=media&token=119468a1-12ba-4507-a593-78cd50ed90f9"
+                        alt="" class="product__image--main" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/marvelclothing-248ba.appspot.com/o/products%2F171508-1600-1600.webp?alt=media&token=2d6ebb2f-b56d-43f2-9b3a-605b8ae7ad89"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/168036-1600-1600?v=637480620422100000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/168039-1600-1600?v=637480620917500000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/171070-1600-1600?v=637817623662830000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170347-1600-1600?v=637788260478830000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product__div">
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/171238-1600-1600?v=637823448715900000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/171239-1600-1600?v=637823448939770000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170021-1600-1600?v=637721602387100000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170022-1600-1600?v=637721616119600000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170603-1600-1600?v=637804409396170000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170599-1600-1600?v=637804407903300000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="product__div">
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170739-1600-1600?v=637806187135730000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170740-1600-1600?v=637806187281470000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170933-1600-1600?v=637812159896100000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/170928-1600-1600?v=637812158883400000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+            </div>
+
+            <div class="product__item">
+                <div class="product__image">
+                    <!-- <img src="https://moviesshopco.vtexassets.com/arquivos/ids/171456-1600-1600?v=637854693188730000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--main" />
+                    <img src="https://moviesshopco.vtexassets.com/arquivos/ids/171458-1600-1600?v=637854693362870000&width=1600&height=1600&aspect=true"
+                        alt="" class="product__image--hover" /> -->
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    
+
+    <article class="subscriptionForm">
+        <p>Suscríbete y obtén el 20% de descuento</p>
+        <input class="subscriptionForm__input" placeholder="Ingresa tu correo electrónico" type="text">
+        <button class="subscriptionForm__btn">Enviar</button>
+
+    </article>
+
+    <script src="/shop.8fb7982f.js" defer=""></script>
+
+</body>
+
+<footer class="footer">
+    <div class="footer__info">
+        <div class="footer__info__column">
+            <h1>MARVEL CLOTHING</h1>
+            <hr>
+            <p> ¿Quiénes somos?
+            </p><p>
+                Trabaja con nosotros
+            </p><p>
+                Peticiones, quejas y reclamos
+            </p><p>
+                Términos y condiciones
+            </p><p>
+                Política de entrega y devoluciones
+            </p><p>
+                Política de privacidad
+            </p><p>
+                Tratamiento de datos
+            </p><p>
+                ¿No logras iniciar sesión?</p>
+        </div>
+        <div class="footer__info__column">
+            <h1>CONTACTO</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="/MENSAJE.dc722450.png" alt="">
+                <p>info@marvelclothing.com</p>
+            </div>
+
+            <p>
+                <img src="/WHATSAPP.11e4beea.png" alt="">
+                (+57)3024686521
+            </p><p>
+                <img src="/UBICACION.a78ecc8e.png" alt="">
+                Calle 1a1 #70d-25 Cali, Colombia
+            </p>
+        </div>
+        <div class="footer__info__column">
+            <h1>SIGUENOS</h1>
+            <hr>
+            <div class="footer__info__column__row">
+                <img src="/INSTAGRAM.c62b5361.png" alt="">
+                <img src="/FACEBOOK.34f32204.png" alt="">
+                <img src="/TIKTOK.1ef388f4.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer__copyright">
+        <p>© Copyright 2020 - 2022 MARVEL Merchandising, LLC. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+</html>

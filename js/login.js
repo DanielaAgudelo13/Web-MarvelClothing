@@ -1,3 +1,4 @@
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebaseConfig";
 import { login } from "./auth";
 
@@ -33,4 +34,26 @@ createUserForm.addEventListener("submit", (e) => {
     const password = createUserForm.password.value;
 
     login(auth, email, password);
+});
+
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        userLogged = user;
+        document.querySelector(".login").innerHTML = `
+        <button class="button-singOut">
+                <span>Cerrar sesión de ${user.email}</span>
+            </button>
+        `;
+
+        document
+            .querySelector(".button-singOut")
+            .addEventListener("click", () => {
+                auth.signOut().then(() => {
+                    location.reload();
+                });
+            });
+        // ...
+    }
 });

@@ -8,7 +8,13 @@
     &__info {
         /*padding: 80px 120px;*/
         display: flex;
-        flex-direction: center;
+        flex-direction: column;
+
+        padding-left: 200px;
+
+        h1 {
+            text-align: left;
+        }
     }
 
     .product__div {

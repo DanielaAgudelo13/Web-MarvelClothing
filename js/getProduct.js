@@ -1,4 +1,4 @@
-import { db } from "../app";
+import { db } from "./app";
 import { doc, getDoc } from "firebase/firestore";
 
 async function getProduct(id) {
